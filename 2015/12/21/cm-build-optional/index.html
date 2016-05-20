@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>CyanogenModをビルドするときに接頭詞などをつける | 心踊る変遷</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="CyanogenModビルド時のオプション設定の話">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CyanogenModをビルドするときに接頭詞などをつける">
+<meta property="og:url" content="https://mindhopping.github.io/2015/12/21/cm-build-optional/index.html">
+<meta property="og:site_name" content="心踊る変遷">
+<meta property="og:description" content="CyanogenModビルド時のオプション設定の話">
+<meta property="og:updated_time" content="2016-05-20T10:05:34.866Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CyanogenModをビルドするときに接頭詞などをつける">
+<meta name="twitter:description" content="CyanogenModビルド時のオプション設定の話">
+  
+    <link rel="alternate" href="/atom.xml" title="心踊る変遷" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">心踊る変遷</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">めいっぱい適当にログを積み重ねていく</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://mindhopping.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-cm-build-optional" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/12/21/cm-build-optional/" class="article-date">
+  <time datetime="2015-12-21T23:37:30.000Z" itemprop="datePublished">2015-12-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CyanogenModをビルドするときに接頭詞などをつける
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="なんぞ"><a href="#なんぞ" class="headerlink" title="なんぞ"></a>なんぞ</h3><p>だいぶ前のツイートを纏める意味です</p>
+<h3 id="具体的に"><a href="#具体的に" class="headerlink" title="具体的に"></a>具体的に</h3><p>カーネルの名前に自分の好んだ文字列をぶち込み<br>ビルド名に自分の好んだ文字列をぶち込み<br>カーネルの起動時のスプラッシュ変更<br>カーネルの細々した設定</p>
+<h3 id="やりかた"><a href="#やりかた" class="headerlink" title="やりかた"></a>やりかた</h3><p>カーネルの設定はカーネルフォルダのarch/arm/configsにある（armじゃないプラットフォーム向けの場合はそのフォルダ）</p>
+<p>カーネルロゴはdrivers/video/logoにある</p>
+<p>カーネルの設定ファイル（上述のフォルダに配置するなんたら_defconfig）には<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">CONFIG_LOCALVERSION</span>=<span class="string">"-MH"</span></span><br></pre></td></tr></table></figure></p>
+<p>といったようにカーネルビルド時のバージョンにつく文字列を押し込める</p>
+<p>ビルド名に指定の文字列を打ち込むのはcm.mkに<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Custom tag <span class="keyword">for</span> unofficial builds</span><br><span class="line">TARGET_UNOFFICIAL_BUILD_ID := MindHopping</span><br></pre></td></tr></table></figure></p>
+<p>のようにする</p>
+<h3 id="該当ツイート"><a href="#該当ツイート" class="headerlink" title="該当ツイート"></a>該当ツイート</h3><p><blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">Kernel豆知識&#10;設定ファイルはここ&#10;arch/arm/configs/&#10;ロゴはここ&#10;drivers/video/logo/&#10;設定ファイルに接頭句があったりする</p>&mdash; 音船 (@otfune) <a href="https://twitter.com/otfune/status/668411582649528320" target="_blank" rel="external">2015, 11月 22</a></blockquote></p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">あとcm.mkに&#10;# Custom tag for unofficial builds&#10;TARGET_UNOFFICIAL_BUILD_ID := LegacyXperia&#10;みたいな表記が可能。&#10;例えばこれをZeroDigitalにするとその文字がビルドにつく。</p>&mdash; 音船 (@otfune) <a href="https://twitter.com/otfune/status/668413270789742592" target="_blank" rel="external">2015, 11月 22</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h3 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h3><p>自分で掘り起こすめんどくささとお別れ出来る</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mindhopping.github.io/2015/12/21/cm-build-optional/" data-id="ciofl3w180007zw9xuet137wh" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CyanogenMod/">CyanogenMod</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/23/kindle-fire-hd-7-repair/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Kindle Fire HD 7&#39;(1st gen)をUbuntuで文鎮から回復させました
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/17/caution-hexo-change-post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hexoの記事を更新するときの注意</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BlissPop/">BlissPop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Command/">Command</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CyanogenMod/">CyanogenMod</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle-Fire-HD-7/">Kindle Fire HD 7'</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Xperia-SP/">Xperia SP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/感想/">感想</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/BlissPop/" style="font-size: 15px;">BlissPop</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/CyanogenMod/" style="font-size: 15px;">CyanogenMod</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/GitHub/" style="font-size: 20px;">GitHub</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/Kindle-Fire-HD-7/" style="font-size: 15px;">Kindle Fire HD 7'</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Xperia-SP/" style="font-size: 10px;">Xperia SP</a> <a href="/tags/感想/" style="font-size: 10px;">感想</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/01/01/manage-hexo-git/">HexoをGitで管理する</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/24/kindle-fire-hd-repair-true/">Kindle Fire HD 7&#39;(1st gen)を完全修復した</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/23/kindle-fire-hd-7-repair/">Kindle Fire HD 7&#39;(1st gen)をUbuntuで文鎮から回復させました</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/21/cm-build-optional/">CyanogenModをビルドするときに接頭詞などをつける</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/17/caution-hexo-change-post/">Hexoの記事を更新するときの注意</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 otofune<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

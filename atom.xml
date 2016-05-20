@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>心踊る変遷</title>
+  <subtitle>めいっぱい適当にログを積み重ねていく</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://mindhopping.github.io/"/>
+  <updated>2016-05-20T10:13:46.882Z</updated>
+  <id>https://mindhopping.github.io/</id>
+  
+  <author>
+    <name>otofune</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HexoをGitで管理する</title>
+    <link href="https://mindhopping.github.io/2016/01/01/manage-hexo-git/"/>
+    <id>https://mindhopping.github.io/2016/01/01/manage-hexo-git/</id>
+    <published>2016-01-01T02:15:14.000Z</published>
+    <updated>2016-05-20T10:13:46.882Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;まず初めに&quot;&gt;&lt;a href=&quot;#まず初めに&quot; class=&quot;headerlink&quot; title=&quot;まず初めに&quot;&gt;&lt;/a&gt;まず初めに&lt;/h3&gt;&lt;p&gt;一回環境が盛大にぶち壊れてくれやがったので。&lt;br&gt;元々Hexoのディレクトリには.gitignoreが存在して、それのおかげさまでnode_modulesがgitに放り込まれてなくて無事死亡。&lt;br&gt;またテーマファイルも存在していなかったのでまたGitHubからとってきました。つらい&lt;/p&gt;
+&lt;h3 id=&quot;やること&quot;&gt;&lt;a href=&quot;#やること&quot; class=&quot;headerlink&quot; title=&quot;やること&quot;&gt;&lt;/a&gt;やること&lt;/h3&gt;&lt;p&gt;GitIgnoreを自分で編集して必要なファイルをまるごと保存してもらうようにする。そうしなければバックアップしていても意味がない&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      HexoをGitで管理するにあたって躓いたところ
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://mindhopping.github.io/tags/Hexo/"/>
+    
+      <category term="Git" scheme="https://mindhopping.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kindle Fire HD 7&#39;(1st gen)を完全修復した</title>
+    <link href="https://mindhopping.github.io/2015/12/24/kindle-fire-hd-repair-true/"/>
+    <id>https://mindhopping.github.io/2015/12/24/kindle-fire-hd-repair-true/</id>
+    <published>2015-12-24T02:04:27.000Z</published>
+    <updated>2016-05-20T10:05:34.866Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;どうした&quot;&gt;&lt;a href=&quot;#どうした&quot; class=&quot;headerlink&quot; title=&quot;どうした&quot;&gt;&lt;/a&gt;どうした&lt;/h3&gt;&lt;p&gt;前の記事のあとカスロム焼くと死ぬ&lt;br&gt;死んだあと同じ方法したらTWRP導入後Stock ROMが立ち上がってこない&lt;/p&gt;
+&lt;h3 id=&quot;対処&quot;&gt;&lt;a href=&quot;#対処&quot; class=&quot;headerlink&quot; title=&quot;対処&quot;&gt;&lt;/a&gt;対処&lt;/h3&gt;&lt;p&gt;Stock ROMに戻した後、一回ファクトリーリセットをStock状態で行う&lt;br&gt;TWRPを手順通り導入する&lt;br&gt;→Stock ROMが起動できた&lt;br&gt;CM11をまず焼いて、そのあとRR 5.5.9を焼いて終わり&lt;/p&gt;
+&lt;h3 id=&quot;感想&quot;&gt;&lt;a href=&quot;#感想&quot; class=&quot;headerlink&quot; title=&quot;感想&quot;&gt;&lt;/a&gt;感想&lt;/h3&gt;&lt;p&gt;よくわからんけどCM11にしないと5.Xにいけないって話があった気がしたのでとりあえずしてみたらすんなりなのでした。Stockが起動できなかったのはbootのバージョンが新しいStock用だからかと思ったけれどそんなことはなかったので、意味がわからない&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      一つ前の記事だけだと何故かカスタムROMを導入するのがうまくいかなかったのです
+    
+    </summary>
+    
+    
+      <category term="Kindle Fire HD 7'" scheme="https://mindhopping.github.io/tags/Kindle-Fire-HD-7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kindle Fire HD 7&#39;(1st gen)をUbuntuで文鎮から回復させました</title>
+    <link href="https://mindhopping.github.io/2015/12/23/kindle-fire-hd-7-repair/"/>
+    <id>https://mindhopping.github.io/2015/12/23/kindle-fire-hd-7-repair/</id>
+    <published>2015-12-23T22:08:47.000Z</published>
+    <updated>2016-05-20T10:05:34.866Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;どうしてこうなった&quot;&gt;&lt;a href=&quot;#どうしてこうなった&quot; class=&quot;headerlink&quot; title=&quot;どうしてこうなった&quot;&gt;&lt;/a&gt;どうしてこうなった&lt;/h3&gt;&lt;p&gt;BlissPopをビルドして、zipができなかったからそのままsystemとかbootとか焼いたら起動不可になった（ブートループ）&lt;br&gt;その時点でFactory Cableを無くしていたので直せなかった&lt;/p&gt;
+&lt;h3 id=&quot;修復&quot;&gt;&lt;a href=&quot;#修復&quot; class=&quot;headerlink&quot; title=&quot;修復&quot;&gt;&lt;/a&gt;修復&lt;/h3&gt;&lt;p&gt;まずFactory Cableをはんだごてで適当に作った&lt;br&gt;そのあとKindle Fire System Restore Toolをダウンロードして中のimagesのboot.img、recovery.img、system.imgを焼き入れた&lt;br&gt;追加でTWRPも入れた&lt;/p&gt;
+&lt;h3 id=&quot;躓きポイント&quot;&gt;&lt;a href=&quot;#躓きポイント&quot; class=&quot;headerlink&quot; title=&quot;躓きポイント&quot;&gt;&lt;/a&gt;躓きポイント&lt;/h3&gt;&lt;p&gt;system.imgだけ焼き入れてもうまく行かないので注意（当たり前）&lt;br&gt;stackを適用しないでリカバリ入れてもブートループするので注意&lt;/p&gt;
+&lt;h3 id=&quot;実行コマンド&quot;&gt;&lt;a href=&quot;#実行コマンド&quot; class=&quot;headerlink&quot; title=&quot;実行コマンド&quot;&gt;&lt;/a&gt;実行コマンド&lt;/h3&gt;&lt;p&gt;Kindle Fire HD文鎮修復（SRT Toolを解凍した先のimagesフォルダで、Kindleをfastbootに入れて）&lt;br&gt;&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;fastboot -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;x1949 flash boot boot&lt;span class=&quot;selector-class&quot;&gt;.img&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fastboot -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;x1949 flash recovery recovery&lt;span class=&quot;selector-class&quot;&gt;.img&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fastboot -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;x1949 flash system system&lt;span class=&quot;selector-class&quot;&gt;.img&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fastboot -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;x1949 reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;TWRPインストール（ダウンロードフォルダで、Kindleのadbを有効にして）&lt;br&gt;&lt;figure class=&quot;highlight stata&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;adb push &lt;span class=&quot;keyword&quot;&gt;stack&lt;/span&gt; /sdcard/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;adb &lt;span class=&quot;keyword&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;su&lt;/span&gt; -c &lt;span class=&quot;string&quot;&gt;&quot;dd if=/sdcard/stack of=/dev/block/platform/omap/omap_hsmmc.1/by-name/system bs=6519488 seek=1&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;adb &lt;span class=&quot;keyword&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;su&lt;/span&gt; -c &lt;span class=&quot;string&quot;&gt;&quot;mount -o remount,rw ext4 /system&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;adb &lt;span class=&quot;keyword&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;su&lt;/span&gt; -c &lt;span class=&quot;string&quot;&gt;&quot;mv /system/etc/install-recovery.sh /system/etc/install-recovery.sh.bak&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;adb &lt;span class=&quot;keyword&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;su&lt;/span&gt; -c &lt;span class=&quot;string&quot;&gt;&quot;mount -o remount,ro ext4 /system&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;ここでfastbootに入れる&lt;br&gt;&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;fastboot -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;x1949 flash bootloader kfhd7-u-boot-prod-&lt;span class=&quot;number&quot;&gt;7.2&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.bin&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fastboot -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;x1949 flash boot kfhd7-freedom-boot-&lt;span class=&quot;number&quot;&gt;7.4&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.img&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fastboot -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;x1949 flash recovery kfhd7-twrp-&lt;span class=&quot;number&quot;&gt;2.8&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;7.0&lt;/span&gt;-recovery&lt;span class=&quot;selector-class&quot;&gt;.img&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fastboot -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;x1949 reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;諸々のリンク&quot;&gt;&lt;a href=&quot;#諸々のリンク&quot; class=&quot;headerlink&quot; title=&quot;諸々のリンク&quot;&gt;&lt;/a&gt;諸々のリンク&lt;/h3&gt;&lt;p&gt;Factory Cable制作の参考&lt;br&gt;&lt;a href=&quot;http://250gt.cocolog-nifty.com/jiyucho/2013/06/kindle-fire-hdf.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;★Kindle fire HD「転ばぬ先の杖：FactoryCable」の作り方。&lt;/a&gt; - 「桜シフォン平和主義の自由帳」様&lt;br&gt;Kindle Fire HD System Restore ToolのXDAスレッド&lt;br&gt;&lt;a href=&quot;http://forum.xda-developers.com/showthread.php?t=1951254&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;KFHD System.img Restore Tool- Updated links 5/15/14&lt;/a&gt; - XDAユーザー「onemeila」様&lt;br&gt;Kindle Fire HDのTWRP導入XDAスレッド&lt;br&gt;&lt;a href=&quot;http://forum.xda-developers.com/showthread.php?t=2128848&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;[BOOTLOADER] 2nd-bootloader for Custom ROMs on KFireHD 7” [06/24 CM12.1/TWRP 2.8.7.0]&lt;/a&gt; - XDAユーザー「Hashcode」様&lt;/p&gt;
+&lt;h3 id=&quot;最後に&quot;&gt;&lt;a href=&quot;#最後に&quot; class=&quot;headerlink&quot; title=&quot;最後に&quot;&gt;&lt;/a&gt;最後に&lt;/h3&gt;&lt;p&gt;やっぱり半田ごてでなにかやるのは苦手でござる。&lt;/p&gt;
+&lt;h3 id=&quot;追記&quot;&gt;&lt;a href=&quot;#追記&quot; class=&quot;headerlink&quot; title=&quot;追記&quot;&gt;&lt;/a&gt;追記&lt;/h3&gt;&lt;p&gt;-i 0x1969ではなく-i 0x1949のミスでした。ゆるして&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      ネットに転がっている情報とほとんど同じ
+    
+    </summary>
+    
+    
+      <category term="Kindle Fire HD 7'" scheme="https://mindhopping.github.io/tags/Kindle-Fire-HD-7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CyanogenModをビルドするときに接頭詞などをつける</title>
+    <link href="https://mindhopping.github.io/2015/12/21/cm-build-optional/"/>
+    <id>https://mindhopping.github.io/2015/12/21/cm-build-optional/</id>
+    <published>2015-12-21T23:37:30.000Z</published>
+    <updated>2016-05-20T10:05:34.866Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;なんぞ&quot;&gt;&lt;a href=&quot;#なんぞ&quot; class=&quot;headerlink&quot; title=&quot;なんぞ&quot;&gt;&lt;/a&gt;なんぞ&lt;/h3&gt;&lt;p&gt;だいぶ前のツイートを纏める意味です&lt;/p&gt;
+&lt;h3 id=&quot;具体的に&quot;&gt;&lt;a href=&quot;#具体的に&quot; class=&quot;headerlink&quot; title=&quot;具体的に&quot;&gt;&lt;/a&gt;具体的に&lt;/h3&gt;&lt;p&gt;カーネルの名前に自分の好んだ文字列をぶち込み&lt;br&gt;ビルド名に自分の好んだ文字列をぶち込み&lt;br&gt;カーネルの起動時のスプラッシュ変更&lt;br&gt;カーネルの細々した設定&lt;/p&gt;
+&lt;h3 id=&quot;やりかた&quot;&gt;&lt;a href=&quot;#やりかた&quot; class=&quot;headerlink&quot; title=&quot;やりかた&quot;&gt;&lt;/a&gt;やりかた&lt;/h3&gt;&lt;p&gt;カーネルの設定はカーネルフォルダのarch/arm/configsにある（armじゃないプラットフォーム向けの場合はそのフォルダ）&lt;/p&gt;
+&lt;p&gt;カーネルロゴはdrivers/video/logoにある&lt;/p&gt;
+&lt;p&gt;カーネルの設定ファイル（上述のフォルダに配置するなんたら_defconfig）には&lt;br&gt;&lt;figure class=&quot;highlight ini&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;CONFIG_LOCALVERSION&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;-MH&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;といったようにカーネルビルド時のバージョンにつく文字列を押し込める&lt;/p&gt;
+&lt;p&gt;ビルド名に指定の文字列を打ち込むのはcm.mkに&lt;br&gt;&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# Custom tag &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; unofficial builds&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TARGET_UNOFFICIAL_BUILD_ID := MindHopping&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;のようにする&lt;/p&gt;
+&lt;h3 id=&quot;該当ツイート&quot;&gt;&lt;a href=&quot;#該当ツイート&quot; class=&quot;headerlink&quot; title=&quot;該当ツイート&quot;&gt;&lt;/a&gt;該当ツイート&lt;/h3&gt;&lt;p&gt;&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;ja&quot;&gt;&lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;Kernel豆知識&amp;#10;設定ファイルはここ&amp;#10;arch/arm/configs/&amp;#10;ロゴはここ&amp;#10;drivers/video/logo/&amp;#10;設定ファイルに接頭句があったりする&lt;/p&gt;&amp;mdash; 音船 (@otfune) &lt;a href=&quot;https://twitter.com/otfune/status/668411582649528320&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2015, 11月 22&lt;/a&gt;&lt;/blockquote&gt;&lt;/p&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;ja&quot;&gt;&lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;あとcm.mkに&amp;#10;# Custom tag for unofficial builds&amp;#10;TARGET_UNOFFICIAL_BUILD_ID := LegacyXperia&amp;#10;みたいな表記が可能。&amp;#10;例えばこれをZeroDigitalにするとその文字がビルドにつく。&lt;/p&gt;&amp;mdash; 音船 (@otfune) &lt;a href=&quot;https://twitter.com/otfune/status/668413270789742592&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2015, 11月 22&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;最後に&quot;&gt;&lt;a href=&quot;#最後に&quot; class=&quot;headerlink&quot; title=&quot;最後に&quot;&gt;&lt;/a&gt;最後に&lt;/h3&gt;&lt;p&gt;自分で掘り起こすめんどくささとお別れ出来る&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      CyanogenModビルド時のオプション設定の話
+    
+    </summary>
+    
+    
+      <category term="CyanogenMod" scheme="https://mindhopping.github.io/tags/CyanogenMod/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexoの記事を更新するときの注意</title>
+    <link href="https://mindhopping.github.io/2015/12/17/caution-hexo-change-post/"/>
+    <id>https://mindhopping.github.io/2015/12/17/caution-hexo-change-post/</id>
+    <published>2015-12-17T00:08:59.000Z</published>
+    <updated>2016-05-20T10:05:34.866Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;Hexoの動作&quot;&gt;&lt;a href=&quot;#Hexoの動作&quot; class=&quot;headerlink&quot; title=&quot;Hexoの動作&quot;&gt;&lt;/a&gt;Hexoの動作&lt;/h4&gt;&lt;p&gt;Hexoは新しい記事のmdができていて、generateコマンドが実行されると静的ページを作りローカルリポジトリを更新する&lt;br&gt;しかし更新はチェックしないため、タグを追加した、間違いを直したとしてももういちど静的ページが作られない&lt;/p&gt;
+&lt;h4 id=&quot;どうする&quot;&gt;&lt;a href=&quot;#どうする&quot; class=&quot;headerlink&quot; title=&quot;どうする&quot;&gt;&lt;/a&gt;どうする&lt;/h4&gt;&lt;p&gt;生成されている静的ファイルを消せばいい&lt;br&gt;ブログのあるカレントディレクトリで&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; clean&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;するとデータベースとファイルを削除した旨のメッセージが出る&lt;br&gt;この状態でgenerateするとすべてのファイルを作りなおしてくれる&lt;/p&gt;
+&lt;h4 id=&quot;さいごに&quot;&gt;&lt;a href=&quot;#さいごに&quot; class=&quot;headerlink&quot; title=&quot;さいごに&quot;&gt;&lt;/a&gt;さいごに&lt;/h4&gt;&lt;p&gt;静的ファイルでの管理の弱みが出た感じ&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      Hexoの記事更新には癖があるのでそのお話
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://mindhopping.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>見出しタグの大きさを1から4に下げた</title>
+    <link href="https://mindhopping.github.io/2015/12/16/replace-h1-h4-by-linux-command/"/>
+    <id>https://mindhopping.github.io/2015/12/16/replace-h1-h4-by-linux-command/</id>
+    <published>2015-12-16T23:55:31.000Z</published>
+    <updated>2016-05-20T10:05:34.866Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;なにやった&quot;&gt;&lt;a href=&quot;#なにやった&quot; class=&quot;headerlink&quot; title=&quot;なにやった&quot;&gt;&lt;/a&gt;なにやった&lt;/h4&gt;&lt;p&gt;Hexoのmd内の#を####にした&lt;br&gt;そのままdeploy -gしても小さくならないのでhexo cleanしてhexo deploy -gした&lt;br&gt;注意-&amp;gt;hexo cleanはIDが変わるのでパーマリンクをid入りにしている場合リンクが変わります&lt;/p&gt;
+&lt;h4 id=&quot;コマンド&quot;&gt;&lt;a href=&quot;#コマンド&quot; class=&quot;headerlink&quot; title=&quot;コマンド&quot;&gt;&lt;/a&gt;コマンド&lt;/h4&gt;&lt;p&gt;source/_postsで&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;grep &lt;span class=&quot;_&quot;&gt;-l&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;#&#39;&lt;/span&gt; ./* | xargs sed -i.bak &lt;span class=&quot;_&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;s/#/####/g&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&quot;参考元&quot;&gt;&lt;a href=&quot;#参考元&quot; class=&quot;headerlink&quot; title=&quot;参考元&quot;&gt;&lt;/a&gt;参考元&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://qiita.com/kkyouhei/items/b4ff839a2f36ba194df3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;複数のファイル内の文字列をまとめて置換するLinuxコマンド&lt;/a&gt; - Qiitaユーザー「kkyouhei」様&lt;br&gt;この記事内のカレントディレクトリの中のファイルをすべて置き換えるサンプルはアスタリスクがなく実行してもディレクトリです、と怒られます&lt;/p&gt;
+&lt;h4 id=&quot;さいごに&quot;&gt;&lt;a href=&quot;#さいごに&quot; class=&quot;headerlink&quot; title=&quot;さいごに&quot;&gt;&lt;/a&gt;さいごに&lt;/h4&gt;&lt;p&gt;やっぱテキストファイルで管理されてるの便利やな&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      Hexoはmdで記事が書かれているのでそのままLinuxコマンドで置き換えが可能です
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://mindhopping.github.io/tags/Linux/"/>
+    
+      <category term="Command" scheme="https://mindhopping.github.io/tags/Command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Xperia SPのStockカーネルをXperiadevからフォークした</title>
+    <link href="https://mindhopping.github.io/2015/12/16/Xperia-SP-Stock-Kernel-Fork-From-xperiadev/"/>
+    <id>https://mindhopping.github.io/2015/12/16/Xperia-SP-Stock-Kernel-Fork-From-xperiadev/</id>
+    <published>2015-12-16T23:26:54.000Z</published>
+    <updated>2016-05-20T10:05:34.866Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;なにやったの&quot;&gt;&lt;a href=&quot;#なにやったの&quot; class=&quot;headerlink&quot; title=&quot;なにやったの&quot;&gt;&lt;/a&gt;なにやったの&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/sonyxperiadev/kernel-copyleft&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sonyxperiadev/kernel-copyleft&lt;/a&gt;をフォークした&lt;br&gt;いらないブランチを消した（後述）&lt;br&gt;デフォルトをXperia SPの最後のカーネルバージョンに設定した&lt;/p&gt;
+&lt;h4 id=&quot;ブランチを消す&quot;&gt;&lt;a href=&quot;#ブランチを消す&quot; class=&quot;headerlink&quot; title=&quot;ブランチを消す&quot;&gt;&lt;/a&gt;ブランチを消す&lt;/h4&gt;&lt;figure class=&quot;highlight accesslog&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git push &lt;span class=&quot;string&quot;&gt;[Git Repository]&lt;/span&gt; :&lt;span class=&quot;string&quot;&gt;[remote branch name]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;これ死ぬほどめんどくさかったけれどこれ以外に見当たらなかったのでなにかあれば教えてください&lt;/p&gt;
+&lt;h4 id=&quot;できたの&quot;&gt;&lt;a href=&quot;#できたの&quot; class=&quot;headerlink&quot; title=&quot;できたの&quot;&gt;&lt;/a&gt;できたの&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/MindHopping/android_kernel_sony_huashan&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MindHopping/android_kernel_sony_huashan&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;さいごに&quot;&gt;&lt;a href=&quot;#さいごに&quot; class=&quot;headerlink&quot; title=&quot;さいごに&quot;&gt;&lt;/a&gt;さいごに&lt;/h4&gt;&lt;p&gt;ブランチ量産しすぎると面倒になると実感&lt;br&gt;一時間くらいかかった&lt;br&gt;畜生の気持ちを味わった気がする&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      Xperia SPのStockカーネルだけのレポジトリをフォークで作った。ブランチ削除が死ぬほど面倒だった。
+    
+    </summary>
+    
+    
+      <category term="GitHub" scheme="https://mindhopping.github.io/tags/GitHub/"/>
+    
+      <category term="Xperia SP" scheme="https://mindhopping.github.io/tags/Xperia-SP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHubのコミットを読ませるPatchファイルとして取得する</title>
+    <link href="https://mindhopping.github.io/2015/12/16/GitHub-Commit-Get-as-Patch/"/>
+    <id>https://mindhopping.github.io/2015/12/16/GitHub-Commit-Get-as-Patch/</id>
+    <published>2015-12-16T23:16:57.000Z</published>
+    <updated>2016-05-20T10:05:34.866Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;patchファイル？&quot;&gt;&lt;a href=&quot;#patchファイル？&quot; class=&quot;headerlink&quot; title=&quot;patchファイル？&quot;&gt;&lt;/a&gt;patchファイル？&lt;/h4&gt;&lt;p&gt;patchコマンドで生成できる差分ファイル&lt;br&gt;GitHubでも生成できる&lt;/p&gt;
+&lt;h4 id=&quot;取得法&quot;&gt;&lt;a href=&quot;#取得法&quot; class=&quot;headerlink&quot; title=&quot;取得法&quot;&gt;&lt;/a&gt;取得法&lt;/h4&gt;&lt;p&gt;コミットのURLに.patchと拡張子をつけるとRawで飛んでくる&lt;br&gt;これをwget -Oかなんかでgit patchに食わせると良し&lt;/p&gt;
+&lt;h4 id=&quot;メモ&quot;&gt;&lt;a href=&quot;#メモ&quot; class=&quot;headerlink&quot; title=&quot;メモ&quot;&gt;&lt;/a&gt;メモ&lt;/h4&gt;&lt;p&gt;a/&lt;br&gt;b/&lt;br&gt;ってディレクトリが消えてないのでそのまま食わせようとしてもどのファイルに適用しますかって言われる&lt;br&gt;すこし手直しが必要（p0で取り込む場合）&lt;br&gt;すこし読んでて、ディレクトリを無視するという意味なpの値を1にすればいいことに気づいた&lt;br&gt;&lt;figure class=&quot;highlight glsl&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;patch&lt;/span&gt; -p1 *.&lt;span class=&quot;keyword&quot;&gt;patch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&quot;先駆者様&quot;&gt;&lt;a href=&quot;#先駆者様&quot; class=&quot;headerlink&quot; title=&quot;先駆者様&quot;&gt;&lt;/a&gt;先駆者様&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://d.hatena.ne.jp/unpush/20090807/1249631932&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;githubからdiffをダウンロードさせるには&lt;/a&gt; - 「unpushの日記」様&lt;br&gt;&lt;a href=&quot;http://d.hatena.ne.jp/kanonji/20110222/1298341934&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;普通のpatchコマンドで取り込めるdiffファイルをgitで作成する&lt;/a&gt; - 「kanonjiの日記」様&lt;br&gt;&lt;a href=&quot;http://d.hatena.ne.jp/zariganitosh/20080325/1206435474&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;patchコマンド-pオプションの覚え書き&lt;/a&gt; - 「ザリガニが見ていた…。」様&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      先駆者のリンクを纏めているのと追記があるくらいですがそれでもよければどうぞ
+    
+    </summary>
+    
+    
+      <category term="GitHub" scheme="https://mindhopping.github.io/tags/GitHub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexoを一日使ってみて</title>
+    <link href="https://mindhopping.github.io/2015/12/16/use-hexo-1day/"/>
+    <id>https://mindhopping.github.io/2015/12/16/use-hexo-1day/</id>
+    <published>2015-12-16T00:45:01.000Z</published>
+    <updated>2016-05-20T10:14:28.298Z</updated>
+    
+    <content type="html">&lt;p&gt;Hexoで適当にこのサイトを書き始めて一日立ったので考えてみる&lt;/p&gt;
+&lt;h4 id=&quot;利点&quot;&gt;&lt;a href=&quot;#利点&quot; class=&quot;headerlink&quot; title=&quot;利点&quot;&gt;&lt;/a&gt;利点&lt;/h4&gt;&lt;p&gt;やっぱりMarkdown記法でかけるところ&lt;br&gt;楽。圧倒的に楽。&lt;br&gt;手元の環境で適当にMDで書いたらそのままdeployで投げれるのもとても良い&lt;/p&gt;
+&lt;h4 id=&quot;う〜ん&quot;&gt;&lt;a href=&quot;#う〜ん&quot; class=&quot;headerlink&quot; title=&quot;う〜ん&quot;&gt;&lt;/a&gt;う〜ん&lt;/h4&gt;&lt;p&gt;GitHub Pagesで管理している以上静的なページしか残らないわけですが、つまり同じPCか同じデータを持ったPCからしか記事がかけない&lt;br&gt;WordpressやBloggerのように複数端末からいじるサイトにはむいてない&lt;/p&gt;
+&lt;h4 id=&quot;Fuck&quot;&gt;&lt;a href=&quot;#Fuck&quot; class=&quot;headerlink&quot; title=&quot;Fuck&quot;&gt;&lt;/a&gt;Fuck&lt;/h4&gt;&lt;p&gt;エラーわかりにくい&lt;/p&gt;
+&lt;h4 id=&quot;総評&quot;&gt;&lt;a href=&quot;#総評&quot; class=&quot;headerlink&quot; title=&quot;総評&quot;&gt;&lt;/a&gt;総評&lt;/h4&gt;&lt;p&gt;とても軽いしいいんじゃないですか&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      Hexo使ってみて思ったことを書きます
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://mindhopping.github.io/tags/Hexo/"/>
+    
+      <category term="感想" scheme="https://mindhopping.github.io/tags/%E6%84%9F%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CM用ツリーのあるデバイスにBlissPopを移植</title>
+    <link href="https://mindhopping.github.io/2015/12/15/CM-supported-devices-port-to-BlissPop/"/>
+    <id>https://mindhopping.github.io/2015/12/15/CM-supported-devices-port-to-BlissPop/</id>
+    <published>2015-12-15T19:22:00.000Z</published>
+    <updated>2016-05-20T10:11:55.322Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;やりかた&quot;&gt;&lt;a href=&quot;#やりかた&quot; class=&quot;headerlink&quot; title=&quot;やりかた&quot;&gt;&lt;/a&gt;やりかた&lt;/h4&gt;&lt;p&gt;CMのビルドに必要なファイルを同じようにBlissPopに配置する&lt;br&gt;(公式サポートデバイスならbreakfastしたらできるroomservice.xmlから必要なものがなにか拝借したり、cm.dependenciesから必要なレポジトリを把握しておく)&lt;br&gt;cm.mkをbliss.mkとしてコピー&lt;br&gt;vendor/cm/なんたらをvendor/bliss/なんたらに変更&lt;br&gt;PRODUCT_NAMEのcm_をbliss_に変更&lt;/p&gt;
+&lt;h4 id=&quot;具体例&quot;&gt;&lt;a href=&quot;#具体例&quot; class=&quot;headerlink&quot; title=&quot;具体例&quot;&gt;&lt;/a&gt;具体例&lt;/h4&gt;&lt;script src=&quot;https://gist.github.com/otofune/f03b0a6525e212732392.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;おわりに&quot;&gt;&lt;a href=&quot;#おわりに&quot; class=&quot;headerlink&quot; title=&quot;おわりに&quot;&gt;&lt;/a&gt;おわりに&lt;/h4&gt;&lt;p&gt;AICPの移植より楽&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      簡単に移植できます。あなたも非公式ビルドに挑戦しませんか？
+    
+    </summary>
+    
+    
+      <category term="BlissPop" scheme="https://mindhopping.github.io/tags/BlissPop/"/>
+    
+      <category term="CyanogenMod" scheme="https://mindhopping.github.io/tags/CyanogenMod/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BlissPopのマニュフェストを削った</title>
+    <link href="https://mindhopping.github.io/2015/12/15/BlissPop-Slim-Manifest-Created/"/>
+    <id>https://mindhopping.github.io/2015/12/15/BlissPop-Slim-Manifest-Created/</id>
+    <published>2015-12-15T00:39:09.000Z</published>
+    <updated>2016-05-20T10:05:34.866Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;BlissPopってなんぞ&quot;&gt;&lt;a href=&quot;#BlissPopってなんぞ&quot; class=&quot;headerlink&quot; title=&quot;BlissPopってなんぞ&quot;&gt;&lt;/a&gt;BlissPopってなんぞ&lt;/h4&gt;&lt;p&gt;TeamBlissの作るCyanogenMod派生のROM&lt;br&gt;ページは&lt;a href=&quot;blissroms.com&quot;&gt;ここ&lt;/a&gt;&lt;br&gt;GitHubは&lt;a href=&quot;github.com/TeamBliss-LP&quot;&gt;ここ&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;やったこと&quot;&gt;&lt;a href=&quot;#やったこと&quot; class=&quot;headerlink&quot; title=&quot;やったこと&quot;&gt;&lt;/a&gt;やったこと&lt;/h4&gt;&lt;p&gt;manifest.xmlの中にsumsungやらasusやらのvendorを取りに行くところがあるので消した&lt;br&gt;できたものは&lt;a href=&quot;github.com/MindHopping/BlissPop-Slim&quot;&gt;これ&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;おわりに&quot;&gt;&lt;a href=&quot;#おわりに&quot; class=&quot;headerlink&quot; title=&quot;おわりに&quot;&gt;&lt;/a&gt;おわりに&lt;/h4&gt;&lt;p&gt;repo用のファイルの構成くっそ簡単&lt;br&gt;それにAndroid以外にも活用できそう。便利&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      無駄なvendorとか持ってきてくれるクソースなので勝手に修正した
+    
+    </summary>
+    
+    
+      <category term="BlissPop" scheme="https://mindhopping.github.io/tags/BlissPop/"/>
+    
+      <category term="GitHub" scheme="https://mindhopping.github.io/tags/GitHub/"/>
+    
+  </entry>
+  
+</feed>
