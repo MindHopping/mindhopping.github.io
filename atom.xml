@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mindhopping.github.io/"/>
-  <updated>2016-06-11T09:36:55.621Z</updated>
+  <updated>2016-06-11T09:41:41.573Z</updated>
   <id>https://mindhopping.github.io/</id>
   
   <author>
@@ -20,12 +20,18 @@
     <link href="https://mindhopping.github.io/2016/06/11/CyanoegnMod_devicetree-enable-doze/"/>
     <id>https://mindhopping.github.io/2016/06/11/CyanoegnMod_devicetree-enable-doze/</id>
     <published>2016-06-11T09:30:39.000Z</published>
-    <updated>2016-06-11T09:36:55.621Z</updated>
+    <updated>2016-06-11T09:41:41.573Z</updated>
     
     <content type="html">&lt;h4 id=&quot;はじめに&quot;&gt;&lt;a href=&quot;#はじめに&quot; class=&quot;headerlink&quot; title=&quot;はじめに&quot;&gt;&lt;/a&gt;はじめに&lt;/h4&gt;&lt;p&gt;CyanogenModのデバイスツリーにDozeモードを追加するコミットが見受けられたので忘れないうちにメモをば、という備忘録です&lt;br&gt;CyanogenMod派生でも利用できる可能性があります  &lt;/p&gt;
 &lt;h4 id=&quot;やり方&quot;&gt;&lt;a href=&quot;#やり方&quot; class=&quot;headerlink&quot; title=&quot;やり方&quot;&gt;&lt;/a&gt;やり方&lt;/h4&gt;&lt;p&gt;&lt;code&gt;overlay/frameworks/base/core/res/res/values/config.xml&lt;/code&gt;の&lt;code&gt;config_enableAutoPowerModes&lt;/code&gt;を有効フラグにしてやる&lt;br&gt;具体的には以下のコードを挿入&lt;/p&gt;
 &lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- enable doze powersaving mode --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;config_enableAutoPowerModes&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bool&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/CyanogenMod/android_device_lge_hammerhead/commit/5864cbe021dbf055ae5f82eb701cbd869bad8afd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hammerhead: Enable doze mode · CyanogenMod/android_device_lge_hammerhead@5864cbe&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;その他&quot;&gt;&lt;a href=&quot;#その他&quot; class=&quot;headerlink&quot; title=&quot;その他&quot;&gt;&lt;/a&gt;その他&lt;/h4&gt;&lt;p&gt;この&lt;code&gt;config.xml&lt;/code&gt;にはDozeモードに関する記述がもうひとつありそちらも入れるといいかもしれない  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- Doze mode --&amp;gt;
+&amp;lt;string name=&amp;quot;config_dozeComponent&amp;quot;&amp;gt;com.android.systemui/com.android.systemui.doze.DozeService&amp;lt;/string&amp;gt;
+&amp;lt;integer name=&amp;quot;config_screenBrightnessDoze&amp;quot;&amp;gt;10&amp;lt;/integer&amp;gt;
+&amp;lt;bool name=&amp;quot;config_dozeAfterScreenOff&amp;quot;&amp;gt;true&amp;lt;/bool&amp;gt;
+&amp;lt;bool name=&amp;quot;config_powerDecoupleInteractiveModeFromDisplay&amp;quot;&amp;gt;true&amp;lt;/bool&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/CyanogenMod/android_device_lge_hammerhead/commit/5864cbe021dbf055ae5f82eb701cbd869bad8afd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hammerhead: Enable doze mode · CyanogenMod/android_device_lge_hammerhead@5864cbe&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
